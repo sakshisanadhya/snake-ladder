@@ -1,0 +1,11 @@
+<div class="container">
+  <section>
+    <div class="board">
+      <div class="board-item board-item-{{ item }}" *ngFor="let item of board">
+        <span>{{ item['pos'] }}</span>
+        <div *ngIf="item['snake']!= null">🐍{{item["snake"]}}</div>
+        <div *ngIf="item['ladder']!= null">🧗{{item["ladder"]}}</div>
+      </div>
+    </div>
+  </section>
+</div>

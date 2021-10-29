@@ -1,9 +1,5 @@
 :root {
     --ticker-color: transparent;
-    --board-marron: #e56567;
-    --board-green: #609217;
-    --board-pink: #ffc0cb;
-    --board-blue: #00adff;
     --board-off-white: #f8f8ff;
     --zIndex-1: 10;
     --zIndex-2: 100;
@@ -19,8 +15,7 @@
   }
   
   .board {
-    width: 1000px;
-    height: 1000px;
+    width: 100x;
     margin: 0;
     border: 1px solid black;
     display: grid;
@@ -31,22 +26,22 @@
   .board-item {
     border: 1px solid black;
     display: flex;
-    justify-content: flex-end;
+    justify-content:center;
     align-items: center;
     font-weight: bold;
     font-size: 15px;
     z-index: 100;
-    background-color: var(--board-marron);
+    background-color:paleturquoise;
   }
   
   .board-item:nth-child(4n + 1) {
-    background-color: var(--board-pink);
+    background-color: rgb(156, 211, 156);
   }
   
   .board-item:nth-child(3n + 1) {
-    background-color: var(--board-green);
+    background-color: palegreen;
   }
   
   .board-item:nth-child(3n + 2) {
-    background-color: var(--board-blue);
+    background-color:palevioletred;
   }
